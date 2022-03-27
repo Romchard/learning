@@ -10,10 +10,38 @@
 
 <body>
     <h1>Главная страница</h1>
-    <ul>
+    <ul class="menu">
         <li><a href="contacts.html">Перейти в контакты</a></li>
         <li><a href="/catalog/phone.html">Перейти в товар каталога</a></li>
+        <li><a href="#">Регистрация</a></li>
     </ul>
+    <h1>Регистрация</h1>
+
+    <!-- input добавляет поле для ввода  -->
+    <!-- placeholder добавляет текст внутри input -->
+    <!-- !input type="" бывает разный, для имени text, для пароля password, для добавления кружочков с выбором "radio" при добавлении атрибута name="" браузер понимает, что это разные элементы, input type="submit" добавляет кнопку отправить, добавление атрибута value - позволяет переименовать ту или иную горячую кнопку -->
+    <!-- !Можно заранее сделать выбранным один из элементов с помощью checked -->
+
+    <!-- Чтобы все элементы взаимодействовали, нужно их затегировать в форму form -->
+
+
+    <form action="#">
+
+        Ваше имя <input type="text" placeholder="Введите ваше имя"><br>
+        Пароль <input type="password" placeholder="Введите ваш пароль"><br>
+
+        Ваш пол <br>
+        М <input type="radio" name="pol"><br>
+        Ж <input type="radio" name="pol"><br>
+        Ваши увлечения <br>
+        <input type="checkbox"> Спорт<br>
+        <input type="checkbox"> It<br>
+        <input type="checkbox"> Быть красивым<br>
+        <input type="submit" value="Отправить данные">
+        <input type="reset">
+    </form>
+
+
 </body>
 
 </html>
