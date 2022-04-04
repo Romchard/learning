@@ -17,10 +17,17 @@
     list-style-type: none;
 }
 
-.list li{
+/* Обращение через ">" идет только к дочерним элементам, если после задавания стилей классу идет пробел, то идет обращение ко всем элементам внутри */
+.list > li{
     width: 50px;
     height: 25px;
     border: 1px solid #000;
+}
+
+/* можно обращаться к соседним селекторам после выбранного класса через знак "+" */
+
+.list + p {
+    color:blueviolet;
 }
 
 .link{
@@ -66,3 +73,28 @@ img[alt="Iphone 14Pro"]{
 /* Самое популярное значение - пиксели px */
 
 /* Процентное соотношение */
+
+h1,
+h3,
+p{
+    text-align: center;
+}
+
+p{
+    text-align: left!important;
+}
+
+p{
+    text-align: right;
+}
+
+p{
+    text-align: center;
+}
+
+li{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
